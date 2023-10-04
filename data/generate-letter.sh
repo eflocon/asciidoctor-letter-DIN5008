@@ -9,7 +9,7 @@
 #echo "Hello $name!"
 
 INPUT_FILE_PATH=$1
-CONTENT_FILE_NAME="letter-content-deleteme.adoc"
+CONTENT_FILE_NAME="letter-content-temp.adoc"
 WORKING_FILE_NAME="letter-main.adoc"
 OUTPUT_FILE_NAME=${WORKING_FILE_NAME/.adoc/.pdf}
 
