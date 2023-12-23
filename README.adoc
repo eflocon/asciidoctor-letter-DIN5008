@@ -18,6 +18,12 @@ https://en.wikipedia.org/wiki/DIN_5008[DIN5008] related generation of letters vi
 * Run generate script with letter - `./generate-letter.sh ../content/2023-02-25-example.adoc`
 * View the result - `open ../content/2023-02-25-example.pdf`
 
+=== Running with docker
+
+* install docker on your machine
+* build docker image - `docker build  . -t asciidoctor-letter`
+* run script `generate-letter.sh <pathToYouradocFile>` - e.g. `./generate-letter.sh content/b.adoc`
+
 == Description
 
 The generator is splited in two parts:
