@@ -1,4 +1,4 @@
-#! /bin/sh -x
+#!/bin/sh
 
 # https://learnxinyminutes.com/docs/bash/
 # https://devhints.io/bash
@@ -9,7 +9,7 @@
 #echo "Hello $name!"
 
 INPUT_FILE_PATH=$1
-CONTENT_FILE_NAME="letter-content-deleteme.adoc"
+CONTENT_FILE_NAME="letter-content-temp.adoc"
 WORKING_FILE_NAME="letter-main.adoc"
 OUTPUT_FILE_NAME=${WORKING_FILE_NAME/.adoc/.pdf}
 
@@ -22,17 +22,15 @@ TARGET_FILE=${TARGET_FILE/.adoc/.pdf}
 TARGET_PATH="$TARGET_DIR/$TARGET_FILE"
 
 # !!!!! Remove existing files !!!!!
-rm $CONTENT_FILE_NAME
+rm -f $CONTENT_FILE_NAME
 
 # copy
 echo "\"cp $INPUT_FILE_PATH $CONTENT_FILE_NAME\""
 cp $INPUT_FILE_PATH $CONTENT_FILE_NAME
 
 # asciidoctor
-#echo "\"asciidoctor-pdf $WORKING_FILE_NAME\""
-#asciidoctor-pdf $WORKING_FILE_NAME
-echo "\"/usr/local/bin/asciidoctor-pdf $WORKING_FILE_NAME\""
-/usr/local/bin/asciidoctor-pdf $WORKING_FILE_NAME
+echo "\"asciidoctor-pdf $WORKING_FILE_NAME\""
+asciidoctor-pdf $WORKING_FILE_NAME
 wait
 echo "set target-path: \"$TARGET_PATH\""
 echo "\"cp $OUTPUT_FILE_NAME $TARGET_PATH\""

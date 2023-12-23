@@ -1,0 +1,29 @@
+== asciidoctor-letter-DIN5008
+
+https://en.wikipedia.org/wiki/DIN_5008[DIN5008] related generation of letters via asciidoctor.
+
+=== HOWTO run
+
+==== Requirements
+
+* ruby version higher than 2.7.2
+** Follow steps to install rbenv version manager - https://github.com/rbenv/rbenv
+** Install ruby version e.g. 3.2.0 - `rbenv install 3.2.0`
+* asciidoctor-pdf installed
+** Install asciidoctor-pdf with gem - `gem install asciidoctor-pdf`
+
+=== Running
+
+* Go do data directory - `cd data`
+* Run generate script with letter - `./generate-letter.sh ../content/2023-02-25-example.adoc`
+* View the result - `open ../content/2023-02-25-example.pdf`
+
+== Description
+
+The generator is splited in two parts:
+1. asciidoc **data-file** that sets the letter-layout
+2. asciidoc **content-file** that defines the letter text and the attributes like addresses, date, etc.
+
+To generate letter, compile the data-file via asciidoctor.
+
+To handle the files in there directories you can use the script-file

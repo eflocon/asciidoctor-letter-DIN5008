@@ -15,7 +15,7 @@ ASCIIDOC
                     Empfängerstraße 1 + \
                     12345 Empfängerstadt
 
-include::letter-content-deleteme.adoc[lines=1..20]
+include::letter-content-temp.adoc[lines=1..20]
 
 //-----------------------------------------------------------------------------------------
 
@@ -46,4 +46,4 @@ include::letter-content-deleteme.adoc[lines=1..20]
 {empty} +
 {empty} +
 
-include::letter-content-deleteme.adoc[]
+include::letter-content-temp.adoc[]
