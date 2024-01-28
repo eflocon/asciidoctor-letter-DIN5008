@@ -17,6 +17,7 @@ ASCIIDOC
 
 include::letter-content-temp.adoc[lines=1..20]
 
+:page-background-image: image:falz.svg[]
 //-----------------------------------------------------------------------------------------
 
 {empty} +

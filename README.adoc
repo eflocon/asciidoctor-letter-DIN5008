@@ -33,3 +33,5 @@ The generator is splited in two parts:
 To generate letter, compile the data-file via asciidoctor.
 
 To handle the files in there directories you can use the script-file
+
+The file `falz.svg` contains an image which gives you hints where to falz your letter so you can put it into an envelop.
