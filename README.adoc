@@ -22,6 +22,7 @@ https://en.wikipedia.org/wiki/DIN_5008[DIN5008] related generation of letters vi
 
 * install docker on your machine
 * run script `generate.sh <pathToYouradocFile>` - e.g. `./generate.sh content/b.adoc`
+* The "official" docker image can be found at https://hub.docker.com/r/ehmkah/asciidoctor-letter-din5008[docker-hub]
 
 === Building with docker
 * install docker on your machine
